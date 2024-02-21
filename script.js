@@ -58,9 +58,11 @@ function setPosition(element, position)  {
 
 //Generate Food
 function drawFood() {
+    if (gameStarted) {   
     const foodElement = createGameElement('div', 'food');
     setPosition(foodElement, food);
     board.appendChild(foodElement);
+    }
 }
 
 
